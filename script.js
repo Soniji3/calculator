@@ -3,6 +3,16 @@ const buttons = document.querySelectorAll("button");
 const specialChars = ["%", "*", "/", "-", "+", "="];
 let output = "";
 
+// Helper function to generate a random color for text 
+// const getRandomColor = () => {
+//   const letters = "0123456789ABCDEF";
+//   let color = "#";
+//   for (let i = 0; i < 6; i++) {
+//     color += letters[Math.floor(Math.random() * 16)];
+//   }
+//   return color;
+// };
+
 //Define function to calculate based on button clicked.
 const calculate = (btnValue) => {
   display.focus();
@@ -20,6 +30,9 @@ const calculate = (btnValue) => {
     output += btnValue;
   }
   display.value = output;
+
+  // Set random color as background color of the input field
+  display.style.color = getRandomColor();
 };
 
 //Add event listener to buttons, call calculate() on click.
