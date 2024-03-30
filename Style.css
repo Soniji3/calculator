@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e0e3eb;
+  background: #e0e3eb;  
 }
 .container {
   position: relative;
@@ -33,6 +33,10 @@ body {
   color: #000e1a;
   pointer-events: none;
 }
+.value:hover
+{
+   background-color: rgb(212, 127, 16);
+}
 .buttons {
   display: grid;
   grid-gap: 10px;
@@ -50,5 +54,8 @@ body {
   transform: scale(0.99);
 }
 .operator {
-  color: #2f9fff;
+  color: #1523eb;
+}
+.operator:hover {
+  background-color: #e0d319;
 }
