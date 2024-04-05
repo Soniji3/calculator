@@ -19,18 +19,20 @@ body {
   width: 100%;
   border-radius: 12px;
   padding: 10px 20px 20px;
-  background: #fff;
+  background: #292828;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 .display {
   height: 80px;
+  background-color: black;
   width: 100%;
   outline: none;
   border: none;
   text-align: right;
   margin-bottom: 10px;
   font-size: 25px;
-  color: #000e1a;
+  color: #ffffff;
+  background-color: #292828;
   pointer-events: none;
 }
 .value:hover
@@ -48,7 +50,8 @@ body {
   border: none;
   font-size: 20px;
   cursor: pointer;
-  background-color: #eee;
+  color: #ffffff;
+  background-color: #292828;
 }
 .buttons button:active {
   transform: scale(0.99);
@@ -57,5 +60,5 @@ body {
   color: #1523eb;
 }
 .operator:hover {
-  background-color: #e0d319;
+  background-color: #e49826;
 }
