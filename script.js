@@ -27,13 +27,20 @@ const calculate = (btnValue) => {
   } else {
     //If output is empty and button is specialChars then return
     if (output === "" && specialChars.includes(btnValue)) return;
-    output += btnValue;
+
   }
+
+if(specialChars.includes(output[output.length-1]) && specialChars.includes(btnValue)){
+
+   output=output.slice(0,-1) + btnValue;
+}else
+{
+  output+=btnValue;
+}
+
   display.value = output;
 
-  // Set random color as background color of the input field
-  display.style.color = getRandomColor();
-};
+ };
 
 //Add event listener to buttons, call calculate() on click.
 buttons.forEach((button) => {
